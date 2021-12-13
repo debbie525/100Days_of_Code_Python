@@ -51,6 +51,7 @@ computer_choice = random.randint(0,2)
 print("Computer chose:")
 selected(computer_choice)
 
+
 if your_choice == 0 and computer_choice ==2:    # rock vs. scissors
     print("You win!")
 elif your_choice == 2 and computer_choice ==1:  # scissors vs. paper
@@ -62,5 +63,5 @@ elif your_choice==computer_choice:
 elif your_choice >2:
     print( "Invalid number, you lose!")
 else: 
-    print("You lose")
+    print("You lose!")
 
