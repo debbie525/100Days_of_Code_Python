@@ -1,6 +1,10 @@
 '''
 Write a program that calculates the average student height from List of heights using "for loop"
 
+Note:
+
+do not use sum() and len() functions
+
 '''
 
 height_list = input ("Input a list of students heights, separated by comma:\n").split(",")
