@@ -36,20 +36,15 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-def selected(choice):
-    if choice == 0:
-        print(rock)
-    elif choice == 1:
-        print(paper)
-    elif choice == 2:
-        print(scissors)
+
+game_images = [rock, paper, scissors]
 
 your_choice = int(input("What do you choose?\nType 0 for rock, 1 for paper or 2 for scissors.\n"))
-selected(your_choice)
+print(game_images[your_choice])
 
 computer_choice = random.randint(0,2)
 print("Computer chose:")
-selected(computer_choice)
+print(game_images[computer_choice])
 
 
 if your_choice == 0 and computer_choice ==2:    # rock vs. scissors
