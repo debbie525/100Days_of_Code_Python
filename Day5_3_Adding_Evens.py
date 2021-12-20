@@ -7,8 +7,14 @@ total = 0
 
 for number in range (1, 101):
     if number % 2 ==0:
-        print (number)
         total += number
     else:
         continue
 print(total)
+
+#other solution
+# total = 0 
+# for number in range (2,101,2): # start=2, stop=101, step =2
+#     total += number
+# print(total)
+
