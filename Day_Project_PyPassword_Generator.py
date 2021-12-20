@@ -16,30 +16,29 @@ num_letters= int(input("How many letters would you like in your password?\n"))
 num_symbols = int(input("How many symbols would you like?\n"))
 num_numbers = int(input("How many numbers would you like?\n"))
 
-password = []
+password_list = []
 for letter in range (1, num_letters+1):
     selected_letter = random.choice(letters)
-    password += selected_letter
+    password_list += selected_letter
     print(selected_letter)
 
 for symbol in range (1, num_symbols+1):
     selected_symbol = random.choice(symbols)
-    password += selected_symbol
+    password_list += selected_symbol
     print(selected_symbol)
 
 for number in range (1, num_numbers+1):
     selected_number = random.choice(numbers)
-    password += selected_number
+    password_list += selected_number
     print(selected_number)
 
-#print(password)
 
-final_password =''
+password =''
 
-for count in range(1, len(password)+1):
-    selected_item = random.choice(password)
-    final_password +=selected_item
-    password.remove(selected_item)
-  
+for count in range(1, len(password_list)+1):
+    selected_item = random.choice(password_list)
+    password +=selected_item
+    password_list.remove(selected_item)
 
-print(f"Generated Password: {final_password}")
+
+print(f"Generated Password: {password}")
