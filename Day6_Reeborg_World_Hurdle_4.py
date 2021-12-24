@@ -7,7 +7,6 @@ The position, the height and the number of hurdles changes each time this world 
 '''
 
 
-
 def turn_right():
     turn_left()
     turn_left()

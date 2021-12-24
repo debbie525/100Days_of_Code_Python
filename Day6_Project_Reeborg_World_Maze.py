@@ -23,10 +23,8 @@ while at_goal() is not True:
         move()
     elif front_is_clear() == True:
         move() 
-    elif wall_in_front() ==True and wall_on_right() == True:
+    else:
         turn_left()
-    elif wall_in_front() == True:
-        turn_right()
 
    
        
