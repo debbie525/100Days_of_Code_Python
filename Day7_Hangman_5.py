@@ -26,7 +26,7 @@ stages_life = hangman_art()
 chosen_word = random.choice(hangman_words())
 
 #Testing code
-print(f'Pssst, the solution is {chosen_word}.')
+#print(f'Pssst, the solution is {chosen_word}.')
 
 display=[]
 for letter in chosen_word:
@@ -53,10 +53,12 @@ while end_of_game == False:
 
     if guess not in chosen_word:         
         lives-=1
-        print(f"reamaining no. of lives: {lives}")
+        print(f'Letter "{guess}" is not included in the mystery word. You lose a life.')
+        print(f"remaining no. of lives: {lives}")
         print(stages_life[lives])
         if lives == 0:
             end_of_game = True
+            print(f'The mystery word is "{chosen_word}".')
             print("You Lose!")
 
     # this will check if all letters of the word are complete. If completed,  the player wins and program will exit the loop
