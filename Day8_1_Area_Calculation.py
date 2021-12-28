@@ -13,7 +13,7 @@ test_w = int(input("Width of wall: "))
 coverage = 5
 def paint_calc(height=test_h, width=test_w, cover=coverage):
     num_cans =(height*width)/coverage
-    # round off number (up)
+    # round off to nearest whole number (up)
     if num_cans%int(num_cans)>0:
         num_cans = int(num_cans)+1
     else:
