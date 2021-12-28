@@ -18,6 +18,7 @@ print the letter and let them know.
 import random
 from Day7_hangman_words import hangman_words
 from Day7_hangman_art import hangman_art, logo
+import os
 
 logo()
 
@@ -69,6 +70,7 @@ while end_of_game == False:
             final_display += letter
         print(f"The word is: {final_display}")
         print("You win!")
+   
 
     
         
