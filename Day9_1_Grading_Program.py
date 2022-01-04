@@ -30,14 +30,14 @@ student_scores = {
 student_grades = {}
 
 for name in student_scores:
-    if student_scores[name] <=70:
-        category = "Fail"
-    elif student_scores[name]>=71 and student_scores[name]<=80:
+    if student_scores[name] > 90:
+        category = "Outsatnding"
+    elif student_scores[name] > 80:
+        category = "Exceeds Expectation"
+    elif student_scores[name] > 70:
         category = "Acceptable"
-    elif student_scores[name]>=81 and student_scores[name]<=90:
-        category = "Exceeds Expectations"
-    elif student_scores[name]>=91 and student_scores[name]<=100:
-        category = "Outstanding"
+    else:
+        category = "Fail"
 
     student_grades[name] = category
 
