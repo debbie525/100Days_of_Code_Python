@@ -1,7 +1,7 @@
-'''
-Create a tip calculator that would calculate the share of each person including the tip
-Final answer should be rounded off into 2 decimal places
-'''
+
+# Create a tip calculator that would calculate the share of each person including the tip
+# Final answer should be rounded off into 2 decimal places
+
 
 print("Welcome to the tip calculator")
 
