@@ -1,3 +1,8 @@
+# Build a calculator (add, subract, multiply and divide)
+# Ask the user for 1st number , 2nd number and operation
+# print out the inputs, operation and answer
+# Ask the user if will continue in calculation using the answer or start a new calculation
+
 import os
 
 operation_list = ["+", "-", "*", "/"]
