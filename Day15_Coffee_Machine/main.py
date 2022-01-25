@@ -3,7 +3,7 @@
 # - can check available resources (water, milk and coffee)
 # - can generate a report of available resources and profit
 # - accepts 4 types of coins (quarter, dime, nickle and penny)
-# - the vitual coffee machine can be turned-off for maintenance.
+# - the virtual coffee machine can be turned-off for maintenance.
 
 from art import logo
 
