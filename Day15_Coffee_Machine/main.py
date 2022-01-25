@@ -1,9 +1,9 @@
 # Virtual Coffee Machine
 # - accepts order of 3 coffee types (latte, espresso and cappuccino)
 # - can check available resources (water, milk and coffee)
-# - can generate a report of available resources and profit
+# - can generate a report of available resources and profit, user input: "report"
 # - accepts 4 types of coins (quarter, dime, nickle and penny)
-# - the virtual coffee machine can be turned-off for maintenance.
+# - can be turned-off for maintenance, user input: "off"
 
 from art import logo
 
@@ -48,7 +48,7 @@ def report(water, milk, coffee, money):
 
 
 def check_resource_espresso(water, coffee, MENU):
-    """ if remaining water is less than zero, resource is insufficient"""
+    """ if remaining ingredient is less than zero, resource is insufficient"""
     remaining_water = water - MENU["espresso"]["ingredients"]["water"]
     remaining_coffee = coffee - MENU["espresso"]["ingredients"]["coffee"]
     if remaining_water < 0:
@@ -62,7 +62,7 @@ def check_resource_espresso(water, coffee, MENU):
 
 
 def check_resource_latte(water, milk, coffee, MENU):
-    """ if remaining water is less than zero, resource is insufficient"""
+    """ if remaining ingredient is less than zero, resource is insufficient"""
     remaining_water = water - MENU["latte"]["ingredients"]["water"]
     remaining_milk = milk - MENU["latte"]["ingredients"]["milk"]
     remaining_coffee = coffee - MENU["latte"]["ingredients"]["coffee"]
@@ -80,7 +80,7 @@ def check_resource_latte(water, milk, coffee, MENU):
 
 
 def check_resource_cappuccino(water, milk, coffee, MENU):
-    """ if remaining water is less than zero, resource is insufficient"""
+    """ if remaining ingredient is less than zero, resource is insufficient"""
 
     remaining_water = water - MENU["cappuccino"]["ingredients"]["water"]
     remaining_milk = milk - MENU["cappuccino"]["ingredients"]["milk"]
@@ -121,6 +121,7 @@ def order(user_input):
 
 print(logo)
 
+# Type "report" to generate a report. Type "off" to turn-off the coffee machine.
 user_input = input("What would you like? (espresso/latte/cappuccino): ").lower()
 
 water = resources["water"]
